@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Weather-app</title>
 </head>
+<div class="holder">
 <body>
     <header>
-        <form>
-       <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="Search" />
+        <form class="search-form">
+       <input type="search" class="search-input" placeholder="Enter a city.." required />
+        <input type="submit" class="submit" value="Search" />
         </form>
     </header>
+ 
     <main>
-        <div>
- <h1>Paris</h1>
+        <div class="current-weather-container">
+ <h1 class="city">Paris</h1>
+ <div class="temperature">
+    12<div class="unit">°C</div>
+ </div>
  <p>Friday 23:25, broken clouds
     <br>
 Humidity: 90%, Wind: 4.12km/h</p>
  </div>
- <div>
-    12 C
- </div>
+ 
     </main>
+    
     
     <footer>Coded by <a href="https://github.com/bohlokwadlalaa" target="_blank">Bohlokwa Babalwa Dlala</a>, code hosted on <a href="https://github.com/bohlokwadlalaa/weather-app" target="_blank">Github</a>, and website hosted on <a href="https://weather-app-bohlokwa.netlify.app/"> Netlify</a></footer>
 </body>
+</div>
 </html>
